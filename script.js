@@ -21,3 +21,6 @@ themeButton.addEventListener("click", () => {
   themeButton.classList.toggle("uil-sun", isDarkMode);
   themeButton.classList.toggle("uil-moon", !isDarkMode);
 });
+if (window.innerWidth >= 768) {
+  document.body.classList.remove("sidebar-hidden");
+}
